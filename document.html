@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         function printDocument() {
+         var inputTextRef=  document.getElementById('textInput')
+         var inputPasswordRef= document.getElementById('passwordInput')
+         var h2Reference = document.getElementById('h2Ref')
+
+              var textInputValue= inputTextRef.value
+               var passwordInputValue = inputPasswordRef.value
+                   h2Reference.innerText = "Form Submitted"
+            
+                   var info = {
+                       name:textInputValue,
+                       password:passwordInputValue
+                   }
+                   console.log(info)
+              
+         }
+    </script>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 100px;">
+        <h2 id="h2Ref">Login Form</h2>
+        <div>
+            <input type="text" placeholder="user name" id="textInput" />
+        </div><br>
+        <div>
+            <input type="password" placeholder="password" id="passwordInput" />
+        </div><br>
+        <div>
+            <input type="button" value="Login" onclick="printDocument()"  />
+        </div>
+    </div>
+</body>
+     
+</html>
+               
